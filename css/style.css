@@ -1,0 +1,247 @@
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 22px;
+}
+
+.first-block{
+    color: #fff;
+    height: 660px;
+    text-align: center;
+}
+.darken {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.bg-hotel {
+    background: url(../img/hotelblur.jpg) no-repeat center;
+    background-size:  cover;
+    width: 100%;
+    height: 500px;
+    padding: 25px;
+    position: relative;
+}
+.container-max {
+    width: 100%;
+}
+.cont-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.mt {
+    margin-top: 100px;
+}
+.p20 {
+    padding: 20px;}
+.mt-50 {
+    margin-top: 50px;
+}
+.mtb15 {
+    margin: 15px 0;
+}
+.white {
+    background: #ffffff;
+}
+.black {
+    background: rgba(0, 0, 0, 0.3)!important;
+}
+.white-font {
+    color: #fff;
+}
+.green {
+    background-color: #51b328;
+}
+/*end */
+
+
+@media only screen and (min-width: 601px){
+    nav , nav ul a {
+        height: 100px;
+        line-height: 100px;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.logo-img{
+    width: 100px;
+}
+nav .brand-logo {
+    line-height: initial;
+}
+/*first block*/
+h1 {
+    font-size: 4.3rem;
+    margin: 0 0 50px 0;
+    text-transform: uppercase;
+}
+.title-conference{
+    color: #fff;
+    text-align: center;
+    width: 100%;}
+#first-p {
+    position: absolute;
+    top: 115px;
+    width: 100%;
+}
+#third-p {
+    position: absolute;
+    bottom: 140px;
+    width: 100%;
+}
+.title-conference p {
+    font-size: 37px;
+}
+/*second block*/
+.text-info {
+    padding: 50px 0;
+    text-align: center;
+}
+.text-info p {
+    font-size: 22px;
+}
+.collapsible {
+     border: none;
+    box-shadow: none;
+}
+.pop-up-registration {
+    width: 50%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.60);
+    border-radius: 2px;
+    padding: 15px;
+}
+/* third block treners*/
+#spikers {
+    position: relative;
+}
+.card-image {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+.card .card-reveal {
+    left: 13px;}
+
+.card-reveal p{
+    font-size: 21px;}
+
+.card .card-title {
+    font-size: 22px;}
+
+.card {
+    position: static;
+    margin: .5rem 0 1rem 0;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+.collapsible-header, .card .card-content {
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 2px;}
+.collapsible-body {
+    background-color: rgba(255, 255, 255, 0.50);
+}
+.card .card-reveal {
+    padding: 24px;
+    position: absolute;
+    background-color: #6a2045;
+    color: #fff;
+    overflow-y: auto;
+    left: 0;
+    right: 0;
+    top: 75%;
+    height: auto;
+    z-index: 3;
+    display: none;
+}
+/*end treners*/
+ul#FAQ {
+    border-radius: 2px;}
+
+.burg {
+    background: #6a2045;
+}
+.address {
+    color: #ffffff;
+    text-align: center;
+}
+
+.block-price{
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #71f50d,  #7d03ff);
+    color: #fff;    border-radius: 2px;
+}
+.block-price p {
+    margin: 5px auto ;
+}
+
+
+
+
+.input-field>label {
+    color: #795ca7;
+    font-size: 18px;
+}
+input[type=text]:not(.browser-default){
+    border-bottom: 1px solid rgba(121, 92, 167, 0.87);
+}
+
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea,
+input[type=text]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #795ca7;
+    -webkit-box-shadow: 0 1px 0 0 #795ca7;
+    box-shadow: 0 1px 0 0 #795ca7;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #4caf50;
+    -webkit-box-shadow: 0 1px 0 0 #4caf50;
+    box-shadow: 0 1px 0 0 #4caf50;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+    color: #4caf50;
+}
+
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label,{
+    color: #795ca7;
+}
+
+.btn-registration {
+    margin-left: 150px;
+}
+#FAQ li {
+    background-image: linear-gradient(to top, #ffffffad, #ffffff75);
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+
+
+
+.soc {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    top: 250px;
+    z-index: 1000;
+}
+.soc img  , .soc a   {
+    width: 100%;
+    height: 50px;
+}
+
+
