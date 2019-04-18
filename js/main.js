@@ -17,6 +17,7 @@ $(document).ready(function(){
 $('.our-photo').slick({
     // autoplay: true,
     dots: true,
+    arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
@@ -52,6 +53,13 @@ function initializeClock(id, endtime) {
     function updateClock() {
         var t = getTimeRemaining(endtime);
 
+        if (t.total <= 0) {
+            document.getElementById("clockdiv").className = "hidden";
+            document.getElementById("deadline-messadge").className = "visible";
+            clearInterval(timeinterval);
+            return true;
+        }
+
         daysSpan.innerHTML = t.days;
         hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
         minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
@@ -68,7 +76,5 @@ function initializeClock(id, endtime) {
 var deadline = "June  01 2019 00:00:00 GMT+0300";
 initializeClock('clockdiv', deadline);
 
-//var deadline = '2019-04-11';
-
-
 ////TIMER
+
