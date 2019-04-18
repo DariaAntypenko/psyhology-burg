@@ -13,6 +13,17 @@ $(document).ready(function(){
 
 //accordion FAQ
 
+//SLIDER 
+$('.our-photo').slick({
+    // autoplay: true,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
+});
+//SLIDER
 
 //TIMER
 
@@ -54,7 +65,7 @@ function initializeClock(id, endtime) {
     updateClock();
     var timeinterval = setInterval(updateClock, 1000);
 }
-var deadline = "April  12 2019 00:00:00 GMT+0300";
+var deadline = "June  01 2019 00:00:00 GMT+0300";
 initializeClock('clockdiv', deadline);
 
 //var deadline = '2019-04-11';

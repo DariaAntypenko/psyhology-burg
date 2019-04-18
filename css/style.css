@@ -82,7 +82,7 @@ nav {
     z-index: 1000;
 }
 .logo-img{
-    width: 100px;
+    width: 92px;
 }
 nav .brand-logo {
     line-height: initial;
@@ -119,6 +119,8 @@ h1 {
 .text-info {
     padding: 50px 0;
     text-align: center;
+    color: #fff;
+    z-index: 3;
 }
 .text-info p {
     font-size: 22px;
@@ -279,7 +281,11 @@ footer p {
 }
 .copyright {font-size: 12px; text-align: center;}
 
+.how-much {
+    font-size: 50px;
+    line-height: 2px;
 
+}
 
 /*timer*/
 #clockdiv{
@@ -294,14 +300,14 @@ footer p {
 #clockdiv > div{
     padding: 10px;
     border-radius: 3px;
-    background: #00BF96;
+    background: #2e3131;
     display: inline-block;
 }
 
 #clockdiv div > span{
     padding: 15px;
     border-radius: 3px;
-    background: #00816A;
+    background: #575858;
     display: inline-block;
 }
 
@@ -309,5 +315,39 @@ footer p {
     padding-top: 5px;
     font-size: 16px;
 }
-
+#deadline-messadge {
+    display: none;
+}
 /*//timer*/
+
+/*slider*/
+
+.slick-slide img {
+    display: block;
+    height: 500px !important;
+    width: auto;
+}
+
+.carousel-item {
+    margin: 0 15px;
+}
+
+.slick-dots li button {
+    border: none;
+    overflow: hidden;
+    /*border-radius: 50%;*/
+    /*background: #000000de;*/
+}
+.slick-prev {
+    transform: rotate(180deg);
+}
+.slick-dots li button:before {
+    font-size: 50px;}
+
+.slick-prev, .slick-next {
+    background: url('../img/arrow.png');
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 75px;
+}
+/*//slider*/
