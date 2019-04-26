@@ -79,8 +79,10 @@ initializeClock('clockdiv', deadline);
 ////TIMER
 
 //document.body.clientHeight
-var heightWindow =  document.body.clientHeight;
-$("#height-main-block").css("height", heightWindow );
+var heightWindow =  document.documentElement.clientHeight;
+$(".height-main-block").css("height", heightWindow );
 
 //$(".topBlock").css("top")
-alert(document.body.clientHeight);
+//alert(heightWindow);
+
+
